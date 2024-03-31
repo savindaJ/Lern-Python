@@ -3,6 +3,9 @@
 # encapsulation , data hiding , access modifiers
 
 class Person:
+    
+    married = False # class attribute
+    
     def __init__(self, name):
         self.name = name # public attribute
         self.__age = 22 # private attribute , double underscore
@@ -16,6 +19,27 @@ class Person:
 
     def display(self):
         print(f"Name: {self.name}, Age: {self.__age}")
+        
+    def __privateMethod(self):
+        print("Private method")
+        
+    def _protectedMethod(self):
+        print("Protected method")
+    
+    def publicMethod(self):
+        print("Public method")
+        
+    @classmethod # class method , can access class attributes , this is decorator
+    def isMarried(cls):
+        # cannot accsess instance attributes or methods
+        print("Class method",cls)
+        return cls.married
+    
+    @staticmethod # static method , cannot access class or instance
+    def isAdult(age):
+        if age > 18:
+            return True
+        return False
         
 savinda = Person("Savinda")
 savinda.display()
@@ -46,3 +70,11 @@ print(sukumala._address) # protected attribute , can access from child class
     name : public attribute
     
 '''
+
+
+danu = Person("Danu")
+danu.publicMethod()
+danu._protectedMethod()
+# danu.__privateMethod() # cannot access private method
+print(danu.isMarried())
+print(Person.isAdult(20))
