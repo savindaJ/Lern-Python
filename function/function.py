@@ -18,3 +18,15 @@ def multiply(a, b):
 print(multiply(a=2, b=3)) # ligel to multiply(2, 3)
 # print(multiply(b=3, 2)) # illigal
 
+# packed and argument kwargs
+def print_args(*args):
+    print(args)
+    
+print_args(1, 2, 3, 4, 5)
+
+
+def print_kwargs(**kwargs):
+    print(kwargs)
+    
+print_kwargs(a=1, b=2, c=3)
+
