@@ -18,7 +18,9 @@ class Dog:
     
     def bark(self): # definitly wrote one parameter
         print("Bark!")
-        
+    
+    def walk(self):
+        print("Walking")
         
 dog= Dog() # always pass dog instance to the class
 dog.name = "Rex"
@@ -26,3 +28,4 @@ dog.age = 3
 dog.color = "Brown"
 dog.scretch = False
 dog.bark() # Bark!
+dog.walk() # Walking
