@@ -8,8 +8,8 @@ Mike,50,Philadelphia,M,Developer,110000
 Emily,55,San Antonio,F,Artist,50000
 Jake,22,San Diego,M,Chef,80000
 Sophia,29,Dallas,F,Scientist,90000
-David,33,San Jose,M,Writer,75000
-Emma,38,Austin,F,Designer,65000
+David,33,San Jose,MALE,Writer,75000
+Emma,38,Austin,FEMALE,Designer,65000
 Chris,42,Jacksonville,M,Musician,72000
 Olivia,47,Fort Worth,F,Pharmacist,68000
 Ryan,52,Columbus,M,Accountant,78000
